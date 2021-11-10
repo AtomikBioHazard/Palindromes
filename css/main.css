@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font: "Oswald", sans-serif;
+  color: #0b1e20;
+  background-color: #f0f0f0;
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.dark-mode {
+  position: fixed;
+  z-index: 999;
+  bottom: 1vw;
+  left: 1vw;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #0b1e20;
+  color: darkgray;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  transition: all 0.3s ease-out;
+}
+.dark-mode:hover {
+  background-color: darkgray;
+  color: #0b1e20;
+}
+
+.dark-theme {
+  background-color: darkgray;
+  color: #0b1e20;
+}
+
+header {
+  position: fixed;
+  top: 1vw;
+  width: 100%;
+  z-index: 990;
+  text-align: center;
+  background: #1e2b38;
+}
+header h1 {
+  color: #fff;
+  padding: 20px 0;
+}
+
+.verifier-form {
+  padding: 150px 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.verifier-form > * {
+  padding: 0.5rem;
+  margin: 1rem auto;
+  display: block;
+  width: 100%;
+}
+.verifier-form legend {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.verifier-form input {
+  font-size: 1rem;
+  font-family: serif;
+}
+.verifier-form *::placeholder {
+  color: #191919;
+}
+.verifier-form [required]:valid {
+  border: thin solid #4caf50;
+}
+.verifier-form [required]:invalid {
+  border: thin solid #f44336;
+}
+
+.verifier-response {
+  padding: 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.verifier-form-error {
+  margin-top: -1rem;
+  font-size: 80%;
+  background-color: #f44336;
+  color: #fff;
+  transition: all 800ms ease;
+}
+.verifier-form-error.is-active {
+  display: block;
+  animation: show-message 1s 1 normal 0s ease-out both;
+}
+
+.none {
+  display: none;
+}
+
+@keyframes show-message {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+footer {
+  position: absolute;
+  bottom: 1vw;
+  width: 100%;
+  z-index: 990;
+  text-align: center;
+}
+footer .social-media {
+  background: #1e2b38;
+  padding: 40px 0;
+}
+footer .social-media p {
+  color: #fff;
+}
+footer .social-media .container {
+  display: flex;
+  justify-content: center;
+}
+footer .social-media a {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding: 15px 0;
+  border-radius: 3px;
+  font-size: 2rem;
+  margin: 0 20px;
+}
+footer .social-media .facebook:hover {
+  background: #3b5998;
+}
+footer .social-media .twitter:hover {
+  background: #1da1f2;
+}
+footer .social-media .youtube:hover {
+  background: #ff0000;
+}
+footer .social-media .github:hover {
+  background: #6cc644;
+}
+footer .social-media .instagram:hover {
+  background: #e1306c;
+}
+
+/*# sourceMappingURL=main.css.map */

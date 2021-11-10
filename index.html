@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" data-dark>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capicua Numbers & Palindromes</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body data-dark>
+  <header>
+    <h1>Capicua Numbers & Palindromes</h1><hr>
+  </header>
+
+  <main>
+    <form class="verifier-form">
+    
+      <legend>Have Fun!!</legend>
+    
+      <label for="palindrome">Palindrome</label>
+      <input type="text" name="palindrome" class="palindrome" placeholder="Type a word"
+        title="This field only accepts letters and words with more than 2 letters" pattern="[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+    
+      <label for="capicua">Capicua (Palindromic Number)</label>
+      <input type="text" name="capicua" class="capicua" placeholder="Give me a number" title="This field only accepts digits and numbers must have more than 2 digits"
+        pattern="[0-9]+$" required>
+
+      <div class="verifier-response none"></div>
+    </form>
+  </main>
+
+  <footer>
+    <div class="container">
+      <section class="social-media">
+        <div class="container">
+          <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+          <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+          <a class="github" href="#"><i class="fa fa-github"></i></a>
+          <a class="instagram" href="#"><i class="fa fa-instagram"></i></a>
+        </div><br>
+        <p>Created by ABH</p>
+      </section>
+    </div>
+  </footer>
+
+  <button class="dark-mode">🌙</button>
+
+  <script src="bundle.js" type="module"></script>
+</body>
+</html>

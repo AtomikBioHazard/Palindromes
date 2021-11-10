@@ -1,0 +1,52 @@
+@use 'variables'
+
+.verifier-form
+  padding: 150px 0
+  margin-left: auto
+  margin-right: auto
+  width: 80%
+  >*
+    padding: .5rem
+    margin: 1rem auto
+    display: block
+    width: 100%
+  legend
+    font-size: 1.5rem
+    font-weight: bold
+    text-align: center
+  input
+    font-size: 1rem
+    font-family: serif
+  *::placeholder
+    color: variables.$auxiliar-color
+  [required]:valid
+    border: thin solid variables.$form-ok-color
+  [required]:invalid
+    border: thin solid variables.$form-err-color
+
+.verifier-response
+  padding: 40px
+  font-size: 1.5rem
+  font-weight: bold
+  text-align: center
+
+.verifier-form-error
+  margin-top: -1rem
+  font-size: 80%
+  background-color: variables.$form-err-color
+  color: #fff
+  transition: all 800ms ease
+  &.is-active
+    display: block
+    animation: show-message 1s 1 normal 0s ease-out both
+
+.none
+  display: none
+
+@keyframes show-message
+  0%
+    visibility: hidden
+    opacity: 0
+  100%
+    visibility: visible
+    opacity: 1
